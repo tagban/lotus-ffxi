@@ -19,7 +19,7 @@ import :dat;
 import :dat.key_tables;
 import glm;
 import lotus;
-import vulkan_hpp;
+import vulkan;
 
 namespace FFXI
 {

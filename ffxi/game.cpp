@@ -20,7 +20,7 @@ import :test.particle_tester;
 import :system_dat;
 import lotus;
 import glm;
-import vulkan_hpp;
+import vulkan;
 
 FFXIGame::FFXIGame(const lotus::Settings& settings)
     : lotus::Game(settings, std::make_unique<FFXIConfig>()),

@@ -24,7 +24,7 @@ import :game;
 import :vana_time;
 import glm;
 import lotus;
-import vulkan_hpp;
+import vulkan;
 
 lotus::Task<std::pair<std::shared_ptr<lotus::Entity>, std::tuple<>>> FFXILandscapeEntity::Init(lotus::Engine* engine, lotus::Scene* scene, size_t zoneid)
 {

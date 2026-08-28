@@ -16,7 +16,7 @@ import :dat.os2;
 import :entity.actor;
 import lotus;
 import glm;
-import vulkan_hpp;
+import vulkan;
 
 class FFXIActorLoader
 {
