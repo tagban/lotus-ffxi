@@ -1,7 +1,12 @@
-add_executable(ffxi
-    main.cpp
-)
-target_sources(ffxi PUBLIC
+# Everything except main.cpp lives in a library, so that something other than
+# this executable can link the game: PortJeuno drives the renderer through its
+# own native layer, and could not while every source file was welded onto an
+# add_executable target. The executable is now only an entry point.
+add_library(ffxi-lib STATIC)
+# Linux needs this to be able to link the library into a shared object later.
+set_target_properties(ffxi-lib PROPERTIES POSITION_INDEPENDENT_CODE ON)
+
+target_sources(ffxi-lib PUBLIC
     FILE_SET CXX_MODULES
     FILES
     config.cppm
@@ -20,10 +25,14 @@ target_sources(ffxi PUBLIC
     system_dat.cpp
 )
 
-target_include_directories(ffxi PRIVATE "." )
-target_include_directories(ffxi PRIVATE "../external/stb" )
-target_compile_features(ffxi PUBLIC cxx_std_23)
-target_link_libraries(ffxi PUBLIC lotus-engine)
+# PUBLIC: consumers of the library compile against these headers too.
+target_include_directories(ffxi-lib PUBLIC "." )
+target_include_directories(ffxi-lib PRIVATE "../external/stb" )
+target_compile_features(ffxi-lib PUBLIC cxx_std_23)
+target_link_libraries(ffxi-lib PUBLIC lotus-engine)
+
+add_executable(ffxi main.cpp)
+target_link_libraries(ffxi PRIVATE ffxi-lib)
 
 if (MSVC)
     # This used to copy ${SDL2_DLL}, left over from SDL2 and empty ever since, so

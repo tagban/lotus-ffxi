@@ -6,4 +6,4 @@ add_slang_shader(raytrace_mmb SOURCE raytrace_mmb.slang MODULES lotus-slang-modu
 add_slang_shader(raytrace_sk2 SOURCE raytrace_sk2.slang MODULES lotus-slang-module lotus-rt-slang-module)
 add_slang_shader(raytrace_d3m SOURCE raytrace_d3m.slang MODULES lotus-slang-module lotus-rt-slang-module)
 add_slang_shader(raytrace_water SOURCE raytrace_water.slang MODULES lotus-slang-module lotus-rt-slang-module)
-add_dependencies(ffxi d3m sk2 mmb raytrace raytrace_mmb raytrace_sk2 raytrace_d3m raytrace_water)
+add_dependencies(ffxi-lib d3m sk2 mmb raytrace raytrace_mmb raytrace_sk2 raytrace_d3m raytrace_water)

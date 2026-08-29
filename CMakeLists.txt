@@ -11,3 +11,4 @@ set( CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin" )
 
 add_subdirectory( "lotus-engine" )
 add_subdirectory( "ffxi" )
+add_subdirectory( "interop" )
