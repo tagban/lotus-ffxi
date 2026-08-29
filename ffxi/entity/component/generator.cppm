@@ -1,5 +1,7 @@
 module;
 
+#include <cstdint>
+
 #include <cmath>
 #include <coroutine>
 #include <memory>

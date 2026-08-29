@@ -1,5 +1,11 @@
 module;
 
+#include <cstdint>
+
+#include <format>
+
+#include <utility>
+
 #include <memory>
 
 #include <string>

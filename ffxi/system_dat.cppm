@@ -10,15 +10,15 @@ export module ffxi:system_dat;
 
 import lotus;
 
+// Importing the partitions that define these, rather than forward-declaring
+// them here, keeps them a single entity. A declaration in one partition and a
+// definition in another do not merge, and the two then fail to match wherever
+// both are visible.
+import :dat;
+import :dat.generator;
+import :dat.scheduler;
+
 export class FFXIGame;
-namespace FFXI
-{
-class Dat;
-class Generator;
-class Keyframe;
-class Scheduler;
-class DatChunk;
-} // namespace FFXI
 
 export class SystemDat
 {

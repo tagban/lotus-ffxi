@@ -1,5 +1,7 @@
 module;
 
+#include <tuple>
+
 #include <string>
 
 #include <array>
@@ -11,12 +13,15 @@ module ffxi:entity.actor_skeleton_static;
 
 import :entity.actor.data;
 import :dat.sk2;
+// Forward-declaring Scheduler/Generator here instead of importing the
+// partitions that define them creates entities distinct from the real ones,
+// so declaration and definition of getSchedulers/getGenerators stop matching.
+import :dat.scheduler;
+import :dat.generator;
 import lotus;
 
 namespace FFXI
 {
-class Scheduler;
-class Generator;
 class ActorSkeletonStatic
 {
 public:

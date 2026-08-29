@@ -1,5 +1,11 @@
 module;
 
+#include <array>
+
+#include <ranges>
+
+#include <tuple>
+
 #include <string>
 
 #include "util.h"

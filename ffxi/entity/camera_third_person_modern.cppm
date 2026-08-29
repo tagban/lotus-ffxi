@@ -1,5 +1,7 @@
 module;
 
+#include <tuple>
+
 #include <coroutine>
 #include <memory>
 #include <utility>

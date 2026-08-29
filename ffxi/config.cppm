@@ -1,5 +1,7 @@
 module;
 
+#include <cstdint>
+
 #include <string>
 
 #include <filesystem>

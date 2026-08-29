@@ -1,5 +1,7 @@
 module;
 
+#include <cstdint>
+
 #include <coroutine>
 #include <lotus/renderer/sdl_inc.h>
 #include <optional>

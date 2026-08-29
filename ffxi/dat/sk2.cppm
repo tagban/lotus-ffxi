@@ -1,5 +1,7 @@
 module;
 
+#include <ranges>
+
 #include <algorithm>
 #include <array>
 #include <cstdint>

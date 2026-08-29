@@ -1,5 +1,11 @@
 module;
 
+#include <cstdint>
+
+#include <tuple>
+
+#include <utility>
+
 #include <vector>
 
 #include <string>

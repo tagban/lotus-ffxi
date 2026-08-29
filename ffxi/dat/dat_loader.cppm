@@ -1,5 +1,9 @@
 module;
 
+#include <cstdint>
+
+#include <ranges>
+
 #include <stdexcept>
 
 #include <algorithm>

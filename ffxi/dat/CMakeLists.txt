@@ -17,4 +17,5 @@ target_sources(ffxi PUBLIC
     sk2.cppm
     PRIVATE
     dat.cpp
+    read_file.cpp
 )

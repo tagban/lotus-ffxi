@@ -1,5 +1,7 @@
 module;
 
+#include <cstdint>
+
 #include <chrono>
 #include <coroutine>
 

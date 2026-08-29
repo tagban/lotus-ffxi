@@ -1,5 +1,9 @@
 module;
 
+#include <ranges>
+
+#include <utility>
+
 #include <span>
 
 #include <memory>

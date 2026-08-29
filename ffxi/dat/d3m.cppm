@@ -1,5 +1,11 @@
 module;
 
+#include <array>
+
+#include <cstdint>
+
+#include <utility>
+
 #include <span>
 
 #include "util.h"

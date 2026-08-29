@@ -1,5 +1,7 @@
 module;
 
+#include <tuple>
+
 #include <cstdint>
 #include <memory>
 #include <utility>

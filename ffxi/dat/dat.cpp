@@ -1,9 +1,12 @@
 module;
 
+#include "read_file.h"
+
+#include <utility>
+
 #include <stdexcept>
 
 #include <filesystem>
-#include <fstream>
 #include <memory>
 #include <string>
 #include <vector>
@@ -44,17 +47,7 @@ typedef struct
 
 Dat::Dat(const std::filesystem::path& filepath)
 {
-    std::ifstream dat{filepath, std::ios::ate | std::ios::binary};
-
-    if (!dat.good())
-        throw std::runtime_error("dat not found: " + filepath.string());
-
-    size_t file_size = (size_t)dat.tellg();
-    buffer.resize(file_size);
-
-    dat.seekg(0);
-    dat.read((char*)buffer.data(), file_size);
-    dat.close();
+    buffer = read_whole_file(filepath);
 
     int offset = 0;
     DatChunk* current_chunk = nullptr;

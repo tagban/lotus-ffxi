@@ -1,5 +1,7 @@
 module;
 
+#include <algorithm>
+
 #include <chrono>
 #include <coroutine>
 #include <memory>

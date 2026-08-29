@@ -1,5 +1,9 @@
 module;
 
+#include <cstdint>
+
+#include <utility>
+
 #include <memory>
 
 #include <vector>

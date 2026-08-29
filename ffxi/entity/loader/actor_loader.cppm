@@ -1,5 +1,13 @@
 module;
 
+#include <array>
+
+#include <cstdint>
+
+#include <ranges>
+
+#include <utility>
+
 #include <algorithm>
 #include <atomic>
 #include <coroutine>

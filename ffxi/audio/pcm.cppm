@@ -1,5 +1,9 @@
 module;
 
+#include <ranges>
+
+#include <iterator>
+
 #include <algorithm>
 #include <cstdint>
 #include <cstring>

@@ -1,5 +1,11 @@
 module;
 
+#include <array>
+
+#include <ranges>
+
+#include <utility>
+
 #include "util.h"
 #include <algorithm>
 #include <atomic>

@@ -1,5 +1,15 @@
 module;
 
+#include <variant>
+
+#include <cstdint>
+
+#include <tuple>
+
+#include <utility>
+
+#include <iterator>
+
 #include <string>
 
 #include <coroutine>

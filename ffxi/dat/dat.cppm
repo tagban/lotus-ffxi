@@ -1,12 +1,13 @@
 module;
 
+#include <cstdint>
+
 #include <filesystem>
-#include <fstream>
 #include <memory>
 #include <string>
 #include <vector>
 
-module ffxi:dat;
+export module ffxi:dat;
 
 import lotus;
 
