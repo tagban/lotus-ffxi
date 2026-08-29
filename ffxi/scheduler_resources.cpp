@@ -1,5 +1,7 @@
 module;
 
+#include <vector>
+
 #include <coroutine>
 #include <memory>
 #include <string>

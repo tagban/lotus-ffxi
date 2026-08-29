@@ -1,5 +1,7 @@
 module;
 
+#include <string>
+
 #include <chrono>
 #include <coroutine>
 #include <map>

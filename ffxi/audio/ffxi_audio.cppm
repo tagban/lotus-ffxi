@@ -1,5 +1,13 @@
 module;
 
+#include <memory>
+
+#include <vector>
+
+#include <stdexcept>
+
+#include <string>
+
 #include <array>
 #include <filesystem>
 #include <format>

@@ -1,5 +1,9 @@
 module;
 
+#include <memory>
+
+#include <string>
+
 #include <chrono>
 #include <cmath>
 #include <coroutine>

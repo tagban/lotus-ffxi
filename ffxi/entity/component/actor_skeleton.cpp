@@ -1,5 +1,9 @@
 module;
 
+#include <vector>
+
+#include <string>
+
 #include <coroutine>
 #include <memory>
 #include <unordered_map>

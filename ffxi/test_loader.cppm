@@ -1,4 +1,6 @@
 module;
+
+#include <stdexcept>
 #include <coroutine>
 #include <cstdint>
 #include <cstring>

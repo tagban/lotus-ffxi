@@ -1,5 +1,7 @@
 module;
 
+#include <stdexcept>
+
 #include <algorithm>
 #include <filesystem>
 #include <format>

@@ -1,5 +1,7 @@
 module;
 
+#include <string>
+
 #include <coroutine>
 #include <map>
 #include <memory>

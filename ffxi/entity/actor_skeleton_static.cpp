@@ -1,5 +1,7 @@
 module;
 
+#include <string>
+
 #include "util.h"
 #include <chrono>
 #include <coroutine>

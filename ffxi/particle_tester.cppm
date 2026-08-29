@@ -1,5 +1,9 @@
 module;
 
+#include <vector>
+
+#include <string>
+
 #include <lotus/renderer/sdl_inc.h>
 #include <memory>
 #include <unordered_map>

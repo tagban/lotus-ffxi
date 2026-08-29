@@ -1,5 +1,7 @@
 module;
 
+#include <string>
+
 #include <array>
 #include <memory>
 #include <span>

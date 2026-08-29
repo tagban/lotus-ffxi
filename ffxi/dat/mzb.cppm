@@ -1,5 +1,11 @@
 module;
 
+#include <span>
+
+#include <memory>
+
+#include <stdexcept>
+
 #include <algorithm>
 #include <coroutine>
 #include <cstdint>

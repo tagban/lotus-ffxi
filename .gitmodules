@@ -3,5 +3,5 @@
 	url = https://github.com/jarikomppa/soloud.git
 [submodule "lotus-engine"]
 	path = lotus-engine
-	url = git@github.com:teschnei/lotus-engine.git
+	url = https://github.com/teschnei/lotus-engine.git
 	branch = master

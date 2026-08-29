@@ -1,5 +1,7 @@
 module;
 
+#include <span>
+
 #include "util.h"
 #include <atomic>
 #include <coroutine>

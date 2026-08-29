@@ -1,5 +1,7 @@
 module;
 
+#include <string>
+
 #include <charconv>
 #include <chrono>
 #include <coroutine>

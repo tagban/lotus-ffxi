@@ -1,5 +1,7 @@
 module;
 
+#include <stdexcept>
+
 #include <filesystem>
 #include <fstream>
 #include <memory>

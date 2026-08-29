@@ -1,5 +1,7 @@
 module;
 
+#include <string>
+
 #include <coroutine>
 #include <memory>
 #include <unordered_map>
